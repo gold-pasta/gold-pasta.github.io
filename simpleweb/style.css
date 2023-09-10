@@ -1,0 +1,127 @@
+/* Claymorphism Design */
+:root {
+  --clay-background: #FFFFFF;
+  --clay-element: #F0ECEA;
+  --clay-text: #3C3C3C;
+}
+
+body, h1, h2, p, ul, li, a {
+  font-family: 'sans-serif';
+  margin: 0;
+  padding: 0;
+  color: var(--clay-text);
+}
+
+body {
+  background-color: var(--clay-background);
+}
+
+nav ul, footer {
+  background-color: var(--clay-element);
+  padding: 20px 40px;
+  margin-bottom: 40px;
+}
+
+nav li, footer p {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav a, footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section {
+  /* padding: 40px 0; */
+  text-align: center;
+  margin: 40px 0; /* 여백 추가 */
+  margin-bottom: 60px; /* 간격 추가 */
+}
+
+.profile {
+  width: 200px;
+  border-radius: 50%;
+  margin: 40px auto;
+  display: block;
+}
+
+h1, h2, p, ul {
+  margin: 20px auto; /* 중앙 정렬 및 좌우 패딩 */
+  max-width: 80%;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 18px; /* 크기 증가 */
+  /* margin-bottom: 20px; 간격 조정 */
+  /* margin-top: 20px; */
+  padding: 10px 20px;
+  background-color: #FFD166;
+  border-radius: 12px;
+  text-decoration: none;
+  color: var(--clay-text);
+}
+
+.carousel {
+  overflow: hidden;
+  max-width: 400px;
+  margin: 40px auto;
+}
+
+.carousel img {
+  width: 400px; /* 사진 크기 수정 */
+  display: none;
+}
+
+.carousel img:first-child {
+  display: block;
+}
+
+.carousel-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#prevBtn, #nextBtn {
+  background-color: var(--clay-element);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: var(--clay-element);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.copyright {
+  margin-left: auto; /* 이 부분을 추가합니다. */
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 60px; /* 간격 추가 */
+}
+
+p {
+  line-height: 1.5;
+  text-align: justify;
+}
+
+ul li {
+  margin-bottom: 20px; /* 줄간격 추가 */
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+  text-align: left;
+  padding-left: 20px;
+}
